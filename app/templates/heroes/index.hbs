@@ -1,74 +1,72 @@
-<table>
+{{#sticky-table}}
   <thead>
     <tr>
-      <th>id</th>
-      <th>Name</th>
-      <th>Patch</th>
-      <th>Name</th>
-      <th>Alignment</th>
-      <th>Movespeed</th>
-      <th>MaxDmg</th>
-      <th>MinDmg</th>
-      <th>HP</th>
-      <th>Mana</th>
-      <th>HPRegen</th>
-      <th>ManaRegen</th>
-      <th>Armor</th>
-      <th>Range</th>
-      <th>ProjectileSpeed</th>
-      <th>BaseStr</th>
-      <th>BaseAgi</th>
-      <th>BaseInt</th>
-      <th>StrGain</th>
-      <th>AgiGain</th>
-      <th>IntGain</th>
-      <th>PrimaryStat</th>
-      <th>BaseAttackTime</th>
-      <th>DayVision</th>
-      <th>NightVision</th>
-      <th>AttackPoint</th>
-      <th>AttackSwing</th>
-      <th>CastPoint</th>
-      <th>CastSwing</th>
-      <th>Turnrate</th>
-      <th>Legs</th>
+      {{table-header content="id"}}
+      {{table-header content="Name"}}
+      {{table-header content="Patch"}}
+      {{table-header content="Alignment"}}
+      {{table-header content="Movespeed"}}
+      {{table-header content="MaxDmg"}}
+      {{table-header content="MinDmg"}}
+      {{table-header content="HP"}}
+      {{table-header content="Mana"}}
+      {{table-header content="HPRegen"}}
+      {{table-header content="ManaRegen"}}
+      {{table-header content="Armor"}}
+      {{table-header content="Range"}}
+      {{table-header content="ProjectileSpeed"}}
+      {{table-header content="BaseStr"}}
+      {{table-header content="BaseAgi"}}
+      {{table-header content="BaseInt"}}
+      {{table-header content="StrGain"}}
+      {{table-header content="AgiGain"}}
+      {{table-header content="IntGain"}}
+      {{table-header content="PrimaryStat"}}
+      {{table-header content="BaseAttackTime"}}
+      {{table-header content="DayVision"}}
+      {{table-header content="NightVision"}}
+      {{table-header content="AttackPoint"}}
+      {{table-header content="AttackSwing"}}
+      {{table-header content="CastPoint"}}
+      {{table-header content="CastSwing"}}
+      {{table-header content="Turnrate"}}
+      {{table-header content="Legs"}}
     </tr>
   </thead>
   <tbody>
     {{#each model as |hero|}}
       <tr>
-        <td>{{hero.id}}</td>
-        <td>{{hero.Name}}</td>
-        <td>{{hero.Patch}}</td>
-        <td>{{hero.Name}}</td>
-        <td>{{hero.Alignment}}</td>
-        <td>{{hero.Movespeed}}</td>
-        <td>{{hero.MaxDmg}}</td>
-        <td>{{hero.MinDmg}}</td>
-        <td>{{hero.HP}}</td>
-        <td>{{hero.Mana}}</td>
-        <td>{{hero.HPRegen}}</td>
-        <td>{{hero.ManaRegen}}</td>
-        <td>{{hero.Armor}}</td>
-        <td>{{hero.Range}}</td>
-        <td>{{hero.ProjectileSpeed}}</td>
-        <td>{{hero.BaseStr}}</td>
-        <td>{{hero.BaseAgi}}</td>
-        <td>{{hero.BaseInt}}</td>
-        <td>{{hero.StrGain}}</td>
-        <td>{{hero.AgiGain}}</td>
-        <td>{{hero.IntGain}}</td>
-        <td>{{hero.PrimaryStat}}</td>
-        <td>{{hero.BaseAttackTime}}</td>
-        <td>{{hero.DayVision}}</td>
-        <td>{{hero.NightVision}}</td>
-        <td>{{hero.AttackPoint}}</td>
-        <td>{{hero.AttackSwing}}</td>
-        <td>{{hero.CastPoint}}</td>
-        <td>{{hero.CastSwing}}</td>
-        <td>{{hero.Turnrate}}</td>
-        <td>{{hero.Legs}}</td>
+        {{table-data content=hero.id}}
+        {{table-data content=hero.Name}}
+        {{table-data content=hero.Patch}}
+        {{table-data content=hero.Alignment}}
+        {{table-data content=hero.Movespeed}}
+        {{table-data content=hero.MaxDmg}}
+        {{table-data content=hero.MinDmg}}
+        {{table-data content=hero.HP}}
+        {{table-data content=hero.Mana}}
+        {{table-data content=hero.HPRegen}}
+        {{table-data content=hero.ManaRegen}}
+        {{table-data content=hero.Armor}}
+        {{table-data content=hero.Range}}
+        {{table-data content=hero.ProjectileSpeed}}
+        {{table-data content=hero.BaseStr}}
+        {{table-data content=hero.BaseAgi}}
+        {{table-data content=hero.BaseInt}}
+        {{table-data content=hero.StrGain}}
+        {{table-data content=hero.AgiGain}}
+        {{table-data content=hero.IntGain}}
+        {{table-data content=hero.PrimaryStat}}
+        {{table-data content=hero.BaseAttackTime}}
+        {{table-data content=hero.DayVision}}
+        {{table-data content=hero.NightVision}}
+        {{table-data content=hero.AttackPoint}}
+        {{table-data content=hero.AttackSwing}}
+        {{table-data content=hero.CastPoint}}
+        {{table-data content=hero.CastSwing}}
+        {{table-data content=hero.Turnrate}}
+        {{table-data content=hero.Legs}}
       </tr>
     {{/each}}
   </tbody>
-</table>
+{{/sticky-table}}
