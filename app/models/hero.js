@@ -1,8 +1,35 @@
 import DS from "ember-data";
 
 var Hero = DS.Model.extend({
-   Name: DS.attr('string'),
-   Alignment: DS.attr('number')
+  Patch: DS.attr('string'),
+  Name: DS.attr('string'),
+  Alignment: DS.attr('number'),
+  Movespeed: DS.attr('number'),
+  MaxDmg: DS.attr('number'),
+  MinDmg: DS.attr('number'),
+  HP: DS.attr('number'),
+  Mana: DS.attr('number'),
+  HPRegen: DS.attr('number'),
+  ManaRegen: DS.attr('number'),
+  Armor: DS.attr('number'),
+  Range: DS.attr('number'),
+  ProjectileSpeed: DS.attr('number'),
+  BaseStr: DS.attr('number'),
+  BaseAgi: DS.attr('number'),
+  BaseInt: DS.attr('number'),
+  StrGain: DS.attr('number'),
+  AgiGain: DS.attr('number'),
+  IntGain: DS.attr('number'),
+  PrimaryStat: DS.attr('number'),
+  BaseAttackTime: DS.attr('number'),
+  DayVision: DS.attr('number'),
+  NightVision: DS.attr('number'),
+  AttackPoint: DS.attr('number'),
+  AttackSwing: DS.attr('number'),
+  CastPoint: DS.attr('number'),
+  CastSwing: DS.attr('number'),
+  Turnrate: DS.attr('number'),
+  Legs: DS.attr('number')
  });
 
 Hero.reopenClass({
